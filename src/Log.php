@@ -41,6 +41,7 @@ class Log
         self::$_file_size = $file_size;
         self::$_rotate_hourly = $rotate_hourly;
         self::$_file_prefix = $file_prefix;
+
         if(empty($formatter)){
             self::$_formatter = new CustomJsonFormatter();
         }

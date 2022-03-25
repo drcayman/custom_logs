@@ -1,8 +1,7 @@
 <?php
-require 'src/Log.php';
+require 'vendor/autoload.php';
 use drcayman\custom_logs\Log;
-echo "111";
-
+Log::initialize();
 $data['message'] = "111";
 
 Log::record($data);

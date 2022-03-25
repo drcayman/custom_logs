@@ -10,7 +10,8 @@ class CustomJsonFormatter implements FormatterInterface
 
     public function format(array $record)
     {
-        return json_encode($record).PHP_EOL;
+        $msg = $record["message"];
+        return $msg.PHP_EOL;
     }
 
     public function formatBatch(array $records)
